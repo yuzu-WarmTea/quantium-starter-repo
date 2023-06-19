@@ -5,7 +5,6 @@ path0 = 'data/daily_sales_data_0.csv'
 path1 = 'data/daily_sales_data_1.csv'
 path2 = 'data/daily_sales_data_2.csv'
 f_path = 'new_data.csv'
-test_path = 'test.csv'
 a = 'pink'
 
 sales0 = []
@@ -76,7 +75,7 @@ rows1 = zip(sales1,dates1,regions1)
 rows2 = zip(sales2,dates2,regions2)
 
 # writing data into new csv file
-with open(test_path,'w', newline='') as file:
+with open(f_path,'w', newline='') as file:
     writer = csv.writer(file)
     field = ["Sales","Date","Region"]
     writer.writerow(field)
