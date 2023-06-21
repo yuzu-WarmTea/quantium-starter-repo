@@ -9,6 +9,7 @@ path = "new_data.csv"
 
 # retrieving the data into a list
 data = pd.read_csv(path, header=0)
+data = data.sort_values(by="Date")
 sales = list(data.Sales)
 dates = list(data.Date)
 regions = list(data.Region)
